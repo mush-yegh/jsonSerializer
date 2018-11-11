@@ -15,7 +15,8 @@ class Serializer {
             String comma = "";
 
             for ( Field field  : theObj.getClass().getDeclaredFields() ) {
-                if(field.isAnnotationPresent(Transient.class)){
+                //if(field.isAnnotationPresent(Transient.class)){
+                if( field.getAnnotation(Transient.class) != null ){
                     continue;
                 }
                 sb.append(comma);
