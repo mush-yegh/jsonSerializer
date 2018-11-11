@@ -20,7 +20,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>sub_pack.App</mainClass>
+              <mainClass>domain.siteName.App</mainClass>
             </manifest>
           </archive>
         </configuration>
